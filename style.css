@@ -1,0 +1,203 @@
+
+
+
+body
+{
+    font-family:'raleway', sans-serif;
+}
+h2
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-left: 30px;
+    justify-content: start;
+}
+h3
+{
+    font-size: 1.0rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: auto;
+}
+a{
+    text-decoration: none;
+}
+nav .visitation {
+    display: flex;
+    padding: auto;
+    margin: 10px;
+}
+.logo {
+    width: 100px;
+
+}
+#older {
+   border: 3px #f2f2f2 solid ;
+   border-radius: 30px 30px;
+   width: 280px;
+   text-align: center;
+}
+button {
+    background-color: #0065fc;
+}
+.filter {
+    display: flex;
+    justify-content: space-around;
+}
+.filter span {
+    border:3px whitesmoke solid;
+    border-radius: 30px 30px 30px 30px;
+    display: flex;
+    justify-content:center ;
+    padding: 20px;
+}
+.une {
+    border: 2px violet solid;
+    margin: 10px;
+}
+.visitation ul {
+    display: flex;
+    flex-direction: end;
+    justify-content: space-around;
+    margin: 70px 50px 20px 80px;
+    margin-left: 20px;
+    padding-right: 10px
+}
+li {
+   
+    list-style-type: none;
+    font-size: 0.9rem;
+    display: flex;
+   
+}
+ .club {
+    display: flex;
+    justify-content: space-around ;
+    border: 3px  black solid;
+    padding: auto;
+    margin: 10px;
+ }
+ .town img {
+    height: 150px;
+    width: 200px;
+    border-radius: 20px 20px 0px 0px; 
+    padding: 10px; 
+    display: flex; 
+ }
+ .town .rooms {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 10px;
+    justify-content: start;
+    width: 760px;
+}
+.town .rooms p, h3, #stars {
+    margin: 0px;
+    padding: auto;
+}
+.popular img {
+    display: flex;
+    height: 200px; 
+    width: 150;
+    border-radius: 20px 0px 0px 20px;
+}
+.popular {
+    background-color: #f2f2f2;
+    border-radius: 20px 20px;
+    margin-left: 10px;
+    padding: 20px;
+    width: 460px;
+}
+.morning {
+    flex-wrap: initial;
+}
+.popular .morning .people p, h3 {
+    margin: 20px 0px;
+    padding: 10px;
+}
+.morning #stars {
+  margin-top: 30px;
+  padding: 20px;  
+}
+#more {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    justify-content: space-between;
+    height: 60px;
+}
+.people article {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 8px 8px 8px #f2f2f2bd;
+}
+.popular h2 {
+margin-left: 20px;
+padding-left: 10px;
+margin-top: 2px;
+}
+article {
+    background-color: white;
+    border-radius: 20px 20px;
+    justify-content: space-around;
+    padding: auto;
+    margin: 10px;
+}
+.town { 
+    background-color: #f2f2f2;
+    border-radius: 20px 20px;
+    width: 765px;
+}
+.activités img {
+    width: 230px;
+    border-radius: 20px 20px 0px 0px ; 
+}
+.activités article {
+    background-color: white;
+    border-radius: 20px 20px;
+    border:1px #f2f2f2 solid;
+    box-shadow: ;
+}
+.parc img, .vieux img {
+    height: 300px;
+   
+}
+.dame img, .pomègue img {
+    height: 100px;
+}
+.dame,.pomègue {
+
+}
+.activités {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #f2f2f2;
+}
+.feet {
+    display: flex;
+    flex-direction: column;
+}
+#stars, #money, #child, #love, #dog {
+    color: #0065fc; 
+}
+.circle-info {
+    display: inline-block;
+    border:1px solid #f2f2f2;
+width: 30px;
+line-height: 30px;
+text-align: center;
+border-radius: 100%;
+}
+ 
+    
