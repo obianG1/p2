@@ -9,9 +9,6 @@ h2
 {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 30px;
-    margin-left: 20px;
-    padding-left: 30px;
     justify-content: start;
 }
 h3
@@ -58,7 +55,9 @@ nav .visitation {
     
 }
 #older label {
-    width: 100px;
+    padding: 0px 10px;
+    align-items: center;
+    border-radius: 0px 30px 30px 0px;
     height: 30px;
     display: inline-block;
     border: #f2f2f2;
@@ -75,6 +74,8 @@ nav .visitation {
 }
 .filter h2 {
     margin-left: 10px;
+    margin-top: 30px;
+    padding-left: 30px;
 }
 .filter span {
     border:3px #f2f2f2 solid;
@@ -113,46 +114,57 @@ li {
 }
  .club {
     display: flex;
-    justify-content: space-around ;
-    padding: auto;
+    padding-bottom: 20px;
+    padding-left: 30px;
     margin: 10px;
  }
+ .town { 
+    background-color: #f2f2f2;
+    border-radius: 20px 20px;
+    margin-right: 10px;
+    width: 60rem;
+}
  .town img {
-    height: 150px;
-    width: 200px;
+    height: 7rem;
+    width: 14rem;
     border-radius: 20px 20px 0px 0px; 
     padding: 10px; 
     display: flex; 
  }
+ .club .town h2  {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-top: 10px;
+ }
  .town .rooms {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
-    padding: 10px;
-    justify-content: start;
-    width: 760px;
+    margin: 10px;
 }
-.town .rooms article p {
-    margin: 0px 10px;
-    padding:0px;
+.town .rooms article {
+    background-color: white;
+    border-radius: 20px 20px;
+    box-shadow: 2px 2px 2px 2px rgb(233, 230, 230);
+    margin: 15px;
+    padding: 10px;
 } 
-.rooms h3 {
-    margin: 0px 10px;
-    padding: 0px;
+.rooms p,h3 {
+    padding: 0px 0px 0px 10px;
+    margin: 0px ;
 }
 .rooms #stars {
-    margin: 0px 10px;
-    padding: 0px;
+    padding: 0px 0px 0px 10px;
     color: #0065fc;
 }
-.club .town #sentanse p {
-    margin:30px;
-    padding:20px;
+.sentanse p {
+   margin: 20px;
+   padding-bottom: 20px;
 }
 .popular img {
     display: flex;
-    height: 200px; 
-    width: 150;
+    height: 10rem; 
+    width: 8rem;
     border-radius: 20px 0px 0px 20px;
 }
 .popular {
@@ -160,76 +172,93 @@ li {
     border-radius: 20px 20px;
     margin-left: 10px;
     padding: 20px;
-    width: 460px;
 }
-.morning {
-    flex-wrap: initial;
-}
-.popular .morning .people p, h3 {
-    margin: 20px 0px;
-    padding: 10px;
+.popular .people .morning p, h3 {
+    margin-right: 10px;
+    padding-left: 10px;
 }
 .morning #stars {
-  margin-top: 30px;
-  padding: 20px; 
+  margin-top: 20px;
+  padding: 10px; 
   color: #0065fc; 
+}
+.grey-stars {
+    color: #e7e6e6;
+    display: inline-block;
 }
 #more {
     display: flex;
-    margin-top: 10px;
-    margin-bottom: 3px;
+    margin-top: 30px;
     justify-content: space-between;
-    height: 60px;
+    margin-bottom: 10px;
 }
-.people article {
+.popular .people article {
     display: flex;
-    margin: 20px;
-    padding: 10px;
-    box-shadow: 3px #f2f2f2bd;
+    border-radius: 20px;
+}
+.full {
+    margin-bottom:20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(233, 230, 230);
+    padding:10px
+}
+.water {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(233, 230, 230);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:20px
+}
+.dreams {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(240, 237, 237);
+    padding:10px
 }
 .popular h2 {
 margin-left: 20px;
 padding-left: 10px;
 margin-top: 2px;
 }
-article {
-    background-color: white;
-    border-radius: 20px 20px;
-    justify-content: space-around;
-    margin: 20px;
-}
-.town { 
-    background-color: #f2f2f2;
-    border-radius: 20px 20px;
-    width: 765px;
-}
 .activités img {
-    width: 230px;
+    width: 18rem;
     border-radius: 20px 20px 0px 0px ; 
 }
 .activités article {
     background-color: white;
     border-radius: 20px 20px;
-    border:1px #f2f2f2 solid;
-    box-shadow: 5px ;
-    margin: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(249, 248, 248);
+    margin: 10px;
 }
 .parc img, .vieux img {
-    height: 300px;
-   
+    height:19rem;
 }
 .dame img, .pomègue img {
-    height: 100px;
+    height: 7rem;
 }
 .activités {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
     margin: 10px;
 }
-.marsaillais {
-    margin-top: 20px;
-    padding-top: 20px;
+.flow, .unsplash {
+    padding-top: 10px;
+}
+.activités h3 {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.marseillais h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+} 
+.marseillais {
+    margin-top: 30px;
+    padding-bottom: 20px;
 }
 footer {
     display: flex;
@@ -243,12 +272,12 @@ footer {
 }
 
 .circle-info {
-display: inline-block;
+display:flex;
 border: 1px solid #f2f2f2;
 width: 30px;
 height: 30px;
 border-radius: 50%;
-text-align: center;
+justify-content: center;
 }
  
     
