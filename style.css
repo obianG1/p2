@@ -30,43 +30,27 @@ nav .visitation {
 }
 #older {
     display: flex;
-    border: 3px #f2f2f2 solid;
     border-radius: 30px 30px;
-    width: 596px;
-    height: 30px;
     text-align: center;
-    justify-content: space-between;
-    margin: 20px;
+    margin: 20px 0px;
+    padding-right: 50px;
 }
 #older input {
-    
-    width: 276px; ;
-    height: 30px;
     border: #f2f2f2;
     font-weight: bold;
-   
+    border: 3px #f2f2f2 solid;
 }
 #older button {
     background-color: #0065fc;
     border-radius: 0px 30px 30px 0px;
-    height: 31px;
-    width: 220px;
     border: #f2f2f2;
     
 }
 #older label {
-    padding: 0px 10px;
-    align-items: center;
-    border-radius: 0px 30px 30px 0px;
-    height: 30px;
-    display: inline-block;
-    border: #f2f2f2;
-    text-align: center;
+    display: flex;
+    padding: 10px;
     background-color: #f2f2f2;
-}
-#older label .fas fa-map-marker-alt {
-    height: 20px;
-    width: 16px;
+    border-radius: 30px 0px 0px 30px;
 }
 .filter {
     display: flex;
@@ -78,22 +62,30 @@ nav .visitation {
     padding-left: 30px;
 }
 .filter span {
-    border:3px #f2f2f2 solid;
+    border: 3px #f2f2f2 solid;
     border-radius: 30px 30px 30px 30px;
     display: flex;
-    text-align: start;
-    padding: 10px;
-    margin: 20px 10px;
+    padding-right: 10px;
+    align-items: center;
+    
 }
+.circle-info {
+    display:flex;
+    border: 1px solid #f2f2f2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-items: center;
+    }
 .filter #money, #child, #love, #dog {
     color: #0065fc; 
+    height: 40px ;
     width: 40px;
-    height: 40px;
     padding-right:0px;
     border-radius: 50%;
     background-color: #deebff;
     margin-right: 10px;
-    text-align: center;
+  
 }
 .une {
     margin: 10px;
@@ -105,7 +97,6 @@ nav .visitation {
     width: 1200px;
 }
 li {
-   
     list-style-type: none;
     font-size: 0.9rem;
     display: flex;
@@ -271,13 +262,6 @@ footer {
     flex-direction: column;
 }
 
-.circle-info {
-display:flex;
-border: 1px solid #f2f2f2;
-width: 30px;
-height: 30px;
-border-radius: 50%;
-justify-content: center;
-}
+
  
     
