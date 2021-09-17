@@ -5,6 +5,10 @@ body
 {
     font-family:'raleway', sans-serif;
 }
+h1, p {
+    margin-left: 20px;
+    padding-left: 10px;
+}
 h2
 {
     font-size: 1.2rem;
@@ -21,7 +25,7 @@ a{
 }
 nav .visitation {
     display: flex;
-    padding: auto;
+    padding-left: 20px;
     margin: 10px;
 }
 .logo {
@@ -33,7 +37,7 @@ nav .visitation {
     border-radius: 30px 30px;
     text-align: center;
     margin: 20px 0px;
-    padding-right: 50px;
+    padding: 0px 10px 10px 30px;
 }
 #older input {
     border: #f2f2f2;
@@ -54,30 +58,41 @@ nav .visitation {
 }
 .filter {
     display: flex;
-    justify-content: space-around;
+    margin-left: 20px;
+}
+.filter p {
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+.filter h3 {
+    font-weight: bold;
+    margin: 0px 10px;
+    padding: 10px 0px;
 }
 .filter h2 {
     margin-left: 10px;
     margin-top: 30px;
     padding-left: 30px;
 }
-.filter span {
+.bill, .wave, .hear, .knee {
+    display: flex;
     border: 3px #f2f2f2 solid;
     border-radius: 30px 30px 30px 30px;
-    display: flex;
-    padding-right: 10px;
     align-items: center;
-    
+    margin: 0px 20px;
 }
 .circle-info {
     display:flex;
     border: 1px solid #f2f2f2;
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     justify-items: center;
-    }
-.filter #money, #child, #love, #dog {
+    padding: 10px;
+    margin: 10px;
+    color: #0065fc;
+}
+#money, #child, #love, #dog {
     color: #0065fc; 
     height: 40px ;
     width: 40px;
@@ -85,11 +100,17 @@ nav .visitation {
     border-radius: 50%;
     background-color: #deebff;
     margin-right: 10px;
-  
 }
-.une {
+.one {
     margin: 10px;
 }
+.in {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    justify-content: start;
+}
+
 .visitation ul {
     display: flex;
     justify-content: end;
@@ -113,14 +134,14 @@ li {
     background-color: #f2f2f2;
     border-radius: 20px 20px;
     margin-right: 10px;
-    width: 60rem;
+    width: 70%;
 }
  .town img {
-    height: 7rem;
-    width: 14rem;
+    height: 150px;
+    width: 100%;
     border-radius: 20px 20px 0px 0px; 
-    padding: 10px; 
     display: flex; 
+    object-fit: cover;
  }
  .club .town h2  {
     margin-top: 40px;
@@ -137,8 +158,9 @@ li {
     background-color: white;
     border-radius: 20px 20px;
     box-shadow: 2px 2px 2px 2px rgb(233, 230, 230);
-    margin: 15px;
+    width: 28%;
     padding: 10px;
+    margin:10px
 } 
 .rooms p,h3 {
     padding: 0px 0px 0px 10px;
@@ -153,24 +175,31 @@ li {
    padding-bottom: 20px;
 }
 .popular img {
-    display: flex;
-    height: 10rem; 
-    width: 8rem;
+    height: 180px; 
+    width:100%;
     border-radius: 20px 0px 0px 20px;
+    object-fit: cover;
 }
 .popular {
     background-color: #f2f2f2;
     border-radius: 20px 20px;
     margin-left: 10px;
     padding: 20px;
+    width: 28%;
+}
+.sun {
+    width: 48%;
+}
+.morning {
+    width: 52%;
 }
 .popular .people .morning p, h3 {
-    margin-right: 10px;
-    padding-left: 10px;
+    margin-left: 10px;
 }
 .morning #stars {
-  margin-top: 20px;
-  padding: 10px; 
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-left: 10px; 
   color: #0065fc; 
 }
 .grey-stars {
@@ -200,7 +229,7 @@ li {
     box-shadow: 2px 2px 2px 2px rgb(233, 230, 230);
     margin-top: 20px;
     margin-bottom: 20px;
-    padding:20px
+    padding:10px
 }
 .dreams {
     background-color: white;
@@ -215,8 +244,8 @@ padding-left: 10px;
 margin-top: 2px;
 }
 .activités img {
-    width: 18rem;
-    border-radius: 20px 20px 0px 0px ; 
+    width: 100%;
+    border-radius: 20px 20px 0px 0px ;object-fit: cover;
 }
 .activités article {
     background-color: white;
@@ -225,18 +254,25 @@ margin-top: 2px;
     margin: 10px;
 }
 .parc img, .vieux img {
-    height:19rem;
+    height:350px;
+    width: 100%;
+    object-fit: cover;
 }
 .dame img, .pomègue img {
-    height: 7rem;
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+.vieux, .pomègue, .parc, .dame {
+    width: 24%;
+    padding: 10px;
 }
 .activités {
     display: flex;
-    justify-content: space-around;
     margin: 10px;
 }
-.flow, .unsplash {
-    padding-top: 10px;
+.flow, .unsplash  {
+    padding-top:20px;
 }
 .activités h3 {
     padding: 10px;
