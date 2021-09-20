@@ -4,6 +4,7 @@
 body
 {
     font-family:'raleway', sans-serif;
+    margin:0px
 }
 h1, p {
     margin-left: 20px;
@@ -28,6 +29,22 @@ nav .visitation {
     padding-left: 20px;
     margin: 10px;
 }
+nav li a {
+    color:black;
+    padding-top: 15px;
+}
+nav .link a:hover {
+    color: #0065fc;
+    border-top: 1px solid #0065fc;
+    
+}
+.link {
+    display: flex;
+}
+nav li {
+    margin:0px 20px;
+    padding:0px;
+}
 .logo {
     width: 100px;
 
@@ -37,18 +54,20 @@ nav .visitation {
     border-radius: 30px 30px;
     text-align: center;
     margin: 20px 0px;
-    padding: 0px 10px 20px 30px;
+    padding: 0px 10px 10px 30px;
 }
 #older input {
     border: #f2f2f2;
     font-weight: bold;
     border: 3px #f2f2f2 solid;
+    padding: 0px 20px;
 }
 #older button {
     background-color: #0065fc;
     border-radius: 0px 30px 30px 0px;
     border: #f2f2f2;
     color: white;
+    padding: 0px 40px;
 }
 #older label {
     display: flex;
@@ -88,9 +107,13 @@ nav .visitation {
     height: 10px;
     border-radius: 50%;
     justify-items: center;
+    justify-content: center;
     padding: 10px;
-    margin: 10px;
     color: #0065fc;
+}
+.in p {
+margin-left: 0px;
+padding-left: 0px;
 }
 #money, #child, #love, #dog {
     color: #0065fc; 
@@ -100,6 +123,9 @@ nav .visitation {
     border-radius: 50%;
     background-color: #deebff;
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .one {
     margin: 10px;
@@ -114,15 +140,13 @@ nav .visitation {
 .visitation ul {
     display: flex;
     justify-content: end;
-    margin: 10px 10px;
+    margin: 0px 10px;
     width: 1200px;
 }
 li {
     list-style-type: none;
     font-size: 0.9rem;
     display: flex;
-   margin: 20px 20px;
-   padding: 10px 10px;
 }
  .club {
     display: flex;
@@ -185,6 +209,7 @@ li {
     border-radius: 20px 20px;
     margin-left: 10px;
     padding: 20px;
+    margin: 0px 20px 0px 10px;
     width: 28%;
 }
 .sun {
@@ -289,11 +314,29 @@ margin-top: 2px;
 }
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 30px;
+    justify-content: start;
     background-color: #f2f2f2;
 }
+.feet ul ,.fast ul, .foot ul  {
+    padding: 0px;
+    margin:0px
+}
+.fast {
+    margin: 30px 100px;
+    padding: 20px 80px;
+}
 .feet {
+    padding: 20px;
+    margin:20px
+}
+.foot {
+    padding: 20px 100px;
+    margin:20px 80px;
+}
+footer li {
+    padding: 10px 0px ;
+}
+.feet, .fast, .foot {
     display: flex;
     flex-direction: column;
 }
