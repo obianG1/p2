@@ -40,7 +40,9 @@ nav li a {
 nav .link a:hover {
     color: #0065fc;
     border-top: 1px solid #0065fc;
-    
+}
+.mobile {
+    display: none;
 }
 .link {
     display: flex;
@@ -231,8 +233,7 @@ li {
 }
 .morning {
     width: 52%;
-}
-.popular .people .morning p, h3 {
+} .people .morning p, h3 {
     margin-left: 10px;
 }
 .morning #stars {
@@ -364,7 +365,11 @@ footer li {
     #older .serch:last-child {
         display: none;
     }
-    section, .town, footer {
+    section {
+        flex-direction: column;
+        width: 100%;
+    }
+    footer  {
         flex-direction: column;
         width: 100%;
     }
@@ -372,9 +377,13 @@ footer li {
         margin: auto;
         padding: 0px;
     }
-    nav ul {
+    nav {
         display: none;
     }
+    .mobile {
+        display: flex;
+    }
+
     .filter {
         
     }
@@ -386,25 +395,35 @@ footer li {
         padding: 0px;
     }
     .club {
-        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
     }
-    .club{
-        
+    .link ul {
+        display: block;
+    }
+    .link li {
+        width: 100%;
     }
     .town {
         display: block;
         margin: 0px;
         padding: 0px;
     }
-    .town .rooms article {
+    .rooms article {
         width: 100%;
     }
-    .popular, .full, .water, .dreams {
+   .full, .water, .dreams {
+        width: 100%;
+    }
+    .popular {
+        margin: 0px;
+        padding: 0px;
         width: 100%;
     }
     .marseillais{
         margin: auto;
         padding: 0px;
+        overflow: hidden;
     }
     .activités {
         display: block;
