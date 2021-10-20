@@ -84,7 +84,7 @@ nav li {
 #older .serch {
     display: flex;
 }
-#older button:first-of-type {
+#older .btn-mobile {
     display:none ;
 }
 .filter {
@@ -210,7 +210,7 @@ li {
     padding: 0px 0px 0px 10px;
     color: #0065fc;
 }
-.sentanse p {
+.more-view p {
    margin: 20px;
    padding-bottom: 20px;
 }
@@ -355,33 +355,63 @@ footer li {
 
 @media screen and (max-width: 700px) {
     body {
-    background-color: rgb(226, 142, 142);
     margin: auto;
-    }
-    #older button:first-of-type {
-       padding: 0px; 
-       border-radius: 10px;
-    }
-    #older .serch:last-child {
-        display: none;
-    }
-    section {
-        flex-direction: column;
-        width: 100%;
-    }
-    footer  {
-        flex-direction: column;
-        width: 100%;
-    }
-    article {
-        margin: auto;
-        padding: 0px;
     }
     nav {
         display: none;
     }
-    .mobile {
+    header .mobile {
+      display:inline-block;
+      width: 100%;
+      padding: 10px;
+    }
+    .mobile .logo-inscription {
         display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+    .mobile .logo-inscription a {
+        color: #0065fc;
+    }
+    .mobile .logo {
+        padding-top: auto;
+        margin: 0px;
+    }
+    .inscription {
+        padding: 10px;
+    }
+    .mobile .cart {
+        display: flex;
+        padding: 0px 30px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .mobile a:hover {
+        color:#0065fc ;
+        border-bottom: 2px solid #0065fc;
+    }
+    .mobile .cart:last-child a{
+        color: black;
+    }
+    .mobile .cart:last-child a:hover{
+        border-bottom: 3px solid #f2f2f2;
+    }
+    #older .btn {
+        display: none;
+    }
+    #older .btn-mobile {
+        display: inline-block;
+         
+     }
+    section {
+        flex-direction: column;
+    }
+    article {
+        margin: auto;
+        padding: 0px;
     }
 
     .filter {
@@ -408,17 +438,21 @@ footer li {
         display: block;
         margin: 0px;
         padding: 0px;
+        width: 100%;
+        background-color: white;
     }
-    .rooms article {
+    .town .rooms article {
         width: 100%;
     }
-   .full, .water, .dreams {
-        width: 100%;
+    .more-view p {
+        margin: 0px;
+        padding: 0px;
     }
     .popular {
         margin: 0px;
-        padding: 0px;
+        padding: 10px;
         width: 100%;
+        border-radius: 0px;
     }
     .marseillais{
         margin: auto;
@@ -432,7 +466,7 @@ footer li {
     }
     .activités img {
         width: 100%;
-        height: 350px;
+        height: 250px;
     }
     .vieux, .pomègue, .parc, .dame {
         width: 100%;
@@ -451,6 +485,7 @@ footer li {
         margin: 10px 20px;
         
     }
+    
 }
 
 
