@@ -66,14 +66,14 @@ nav li {
     border: #f2f2f2;
     font-weight: bold;
     border: 3px #f2f2f2 solid;
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 #older button {
     background-color: #0065fc;
     border-radius: 0px 30px 30px 0px;
     border: #f2f2f2;
     color: white;
-    padding: 0px 40px;
+    padding: 0px 10px;
 }
 #older label {
     display: flex;
@@ -194,7 +194,7 @@ li {
     flex-wrap: wrap;
     margin: 10px;
 }
-.town .rooms article {
+.club .town .rooms article {
     background-color: white;
     border-radius: 20px 20px;
     box-shadow: 2px 2px 2px 2px rgb(233, 230, 230);
@@ -206,9 +206,13 @@ li {
     padding: 0px 0px 0px 10px;
     margin: 0px ;
 }
-.rooms #stars {
+.town .rooms article #stars {
     padding: 0px 0px 0px 10px;
     color: #0065fc;
+}
+/*** make clickable accomodation and activities in Marseille***/
+.town .rooms .clickable:hover {
+    background-color: #b5e0f1;
 }
 .more-view p {
    margin: 20px;
@@ -356,22 +360,21 @@ footer li {
 @media screen and (max-width: 700px) {
     body {
     margin: auto;
+    padding: 5px;
     }
     nav {
         display: none;
     }
     header .mobile {
       display:inline-block;
+      padding: 0px;
       width: 100%;
-      padding: 10px;
     }
     .mobile .logo-inscription {
         display: flex;
         justify-content: space-between;
-        width: 100%;
-        padding: auto;
+        padding: 20px 30px;
         overflow: hidden;
-        padding: 20px;
     }
     .mobile .logo-inscription a {
         color: #0065fc;
@@ -385,19 +388,21 @@ footer li {
     }
     .mobile .cart {
         display: flex;
-        padding: 0px 30px;
         width: 100%;
-        justify-content: space-around;
+        padding-bottom: 20px;
     }
-    .mobile a:hover {
+    header .mobile .cart a:hover {
         color:#0065fc ;
-        border-bottom: 2px solid #0065fc;
     }
-    .mobile .cart:last-child a{
+    header .mobile .cart a:hover {
+    border-bottom: 2px solid #0065fc;
+    }
+    .mobile .cart a{
         color: black;
-    }
-    .mobile .cart:last-child a:hover{
-        border-bottom: 3px solid #f2f2f2;
+        text-align: center;
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 10px;
+        width: 100%;
     }
     #older .btn {
         display: none;
@@ -413,10 +418,6 @@ footer li {
         margin: auto;
         padding: 0px;
     }
-
-    .filter {
-        
-    }
     .bill {
 		margin: 10px 10px;
 	}
@@ -424,15 +425,15 @@ footer li {
         margin:auto;
         padding: 0px;
     }
+    .club .town h2 {
+        margin: 0px;
+        padding: 10px;
+    }
     .club {
         flex-wrap: wrap;
         flex-direction: column-reverse;
-    }
-    .link ul {
-        display: block;
-    }
-    .link li {
-        width: 100%;
+        padding: 0px;
+        margin: 0px;
     }
     .town {
         display: block;
@@ -443,6 +444,12 @@ footer li {
     }
     .town .rooms article {
         width: 100%;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+    .town .rooms {
+        margin: 0px;
+        padding: 0px;
     }
     .more-view p {
         margin: 0px;
@@ -450,25 +457,40 @@ footer li {
     }
     .popular {
         margin: 0px;
-        padding: 10px;
+        padding: 0px;
         width: 100%;
         border-radius: 0px;
     }
+    .popular #more {
+        padding: 10px;
+    }
+    .people {
+        padding: 20px;
+    }
     .marseillais{
-        margin: auto;
-        padding: 0px;
+        margin: 0px;
+        padding-top: 20px;
         overflow: hidden;
+    }
+    .marseillais h2 {
+        padding: 0px;
+        margin: 0px;
     }
     .activités {
         display: block;
         margin: auto;
-        padding: 0px;
+        padding:0px;
+    }
+    .marseillais .activités article {
+        margin: 0px;
     }
     .activités img {
         width: 100%;
         height: 250px;
     }
     .vieux, .pomègue, .parc, .dame {
+        padding: 0px;
+        margin: 0px;
         width: 100%;
     }
     footer {
